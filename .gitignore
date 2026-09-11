@@ -1,0 +1,11 @@
+.DS_Store
+build/
+build-device/
+release/
+evidence/*
+!evidence/VALIDATION.md
+*.xcuserstate
+xcuserdata/
+*.xcresult
+*.ipa
+*.mobileprovision
