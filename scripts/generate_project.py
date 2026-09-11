@@ -71,7 +71,7 @@ for target in ['WhatWasThat', 'WhatWasThatWidgets', 'WhatWasThatTests', 'WhatWas
         if team:
             values['DEVELOPMENT_TEAM'] = team
         if is_app or is_extension:
-            values.update({'MARKETING_VERSION': '1.0', 'CURRENT_PROJECT_VERSION': '3'})
+            values.update({'MARKETING_VERSION': '1.0', 'CURRENT_PROJECT_VERSION': '4'})
         if target in ['WhatWasThat', 'WhatWasThatWidgets']:
             values.update({'WWT_APP_GROUP': app_group, 'CODE_SIGN_ENTITLEMENTS': target + '/' + target + '.entitlements'})
         if is_extension:
@@ -85,7 +85,7 @@ for target in ['WhatWasThat', 'WhatWasThatWidgets', 'WhatWasThatTests', 'WhatWas
                 'INFOPLIST_KEY_UIApplicationSceneManifest_Generation': 'YES',
                 'INFOPLIST_KEY_UILaunchScreen_Generation': 'YES',
                 'INFOPLIST_KEY_UISupportedInterfaceOrientations': '"UIInterfaceOrientationPortrait"',
-                'MARKETING_VERSION': '1.0', 'CURRENT_PROJECT_VERSION': '3',
+                'MARKETING_VERSION': '1.0', 'CURRENT_PROJECT_VERSION': '4',
                 'ENABLE_PREVIEWS': 'YES',
             })
         elif target == 'WhatWasThatTests':
