@@ -8,12 +8,14 @@ Validation performed on 11 September 2026 with Xcode 26.0.
 - All 10 tests passed: 6 unit tests and 4 UI tests (`verified-tests.xcresult`).
 - Model tests cover atomic persistence, filtering, idempotent collection imports, unsafe URL rejection, edit/delete persistence, and corrupt-file protection.
 - UI tests exercise onboarding, save/search/relaunch, choosing an untried suggestion, collection creation, tried status, and the native collection share sheet.
+- The final picker layout and share sheet also passed a focused UI run with freshly built test binaries (`whatwasthat-layout-verified.xcresult`).
 - Actual simulator screenshots are checked in under `site/assets/`.
 - Signed app and WidgetKit extension build successfully with the configured development team. Both targets carry the same App Group entitlement.
 - The app was installed on the connected physical iPhone 17 Pro running iOS 27. The initial launch request was blocked by the phone's lock screen. Physical interaction and widget refresh verification remain pending until it is unlocked.
 
 ## Website
 
+- GitHub Pages deployment completed successfully and the live site returned HTTP 200. The live demo, images, and privacy link were also checked.
 - Desktop visual review and mobile layouts at 390 px and 320 px.
 - No horizontal overflow at the checked mobile widths.
 - Category-specific demo picker produces the matching category.

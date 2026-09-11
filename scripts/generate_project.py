@@ -71,7 +71,7 @@ for target in ['WhatWasThat', 'WhatWasThatWidgets', 'WhatWasThatTests', 'WhatWas
         if team:
             values['DEVELOPMENT_TEAM'] = team
         if is_app or is_extension:
-            values.update({'MARKETING_VERSION': '1.0', 'CURRENT_PROJECT_VERSION': '1'})
+            values.update({'MARKETING_VERSION': '1.0', 'CURRENT_PROJECT_VERSION': '2'})
         if target in ['WhatWasThat', 'WhatWasThatWidgets']:
             values.update({'WWT_APP_GROUP': app_group, 'CODE_SIGN_ENTITLEMENTS': target + '/' + target + '.entitlements'})
         if is_extension:
@@ -81,12 +81,12 @@ for target in ['WhatWasThat', 'WhatWasThatWidgets', 'WhatWasThatTests', 'WhatWas
                 'ASSETCATALOG_COMPILER_APPICON_NAME': 'AppIcon',
                 'INFOPLIST_FILE': 'WhatWasThat/Info.plist',
                 'INFOPLIST_KEY_CFBundleDisplayName': '"What Was That?"',
-                'INFOPLIST_KEY_LSApplicationCategoryType': '"public.app-category.education"',
+                'INFOPLIST_KEY_LSApplicationCategoryType': '"public.app-category.lifestyle"',
                 'INFOPLIST_KEY_UIApplicationSceneManifest_Generation': 'YES',
                 'INFOPLIST_KEY_UILaunchScreen_Generation': 'YES',
                 'INFOPLIST_KEY_UISupportedInterfaceOrientations': '"UIInterfaceOrientationPortrait"',
-                'MARKETING_VERSION': '1.0', 'CURRENT_PROJECT_VERSION': '1',
-                'ENABLE_PREVIEWS': 'YES', 'OTHER_LDFLAGS': '"-lsqlite3"',
+                'MARKETING_VERSION': '1.0', 'CURRENT_PROJECT_VERSION': '2',
+                'ENABLE_PREVIEWS': 'YES',
             })
         elif target == 'WhatWasThatTests':
             values.update({'TEST_HOST': '"$(BUILT_PRODUCTS_DIR)/WhatWasThat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhatWasThat"', 'BUNDLE_LOADER': '"$(TEST_HOST)"'})

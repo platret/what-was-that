@@ -36,7 +36,7 @@ final class JourneyTests: XCTestCase {
         app.tabBars.buttons["Pick for me"].tap(); app.buttons["shufflePick"].tap()
         XCTAssertTrue(app.buttons["shufflePick"].waitForExistence(timeout: 5))
     }
-    @MainActor func testDetailTriedAndScreenshots() {
+    @MainActor func testRecommendationDetailsSharingAndPinnedPicker() {
         let app = XCUIApplication()
         app.launchArguments = ["--screenshots"]
         app.launch()
@@ -58,7 +58,7 @@ final class JourneyTests: XCTestCase {
         app.staticTexts["A slow weekend"].tap()
         XCTAssertTrue(app.buttons["shareCollection"].waitForExistence(timeout: 5))
         app.buttons["shareCollection"].tap()
-        XCTAssertTrue(app.staticTexts["Save to Files"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.otherElements["ActivityListView"].waitForExistence(timeout: 5))
     }
 
     @MainActor func testWelcomeScreenshot() {
