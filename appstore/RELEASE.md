@@ -18,4 +18,8 @@ Built and archived with Xcode 27 RC (27A266a). App Store Connect upload succeede
 
 Collection sharing sends files, not live cloud collaboration. Widgets and sharing are free in this release. No paid Pro product is configured.
 
-Submission status is managed in App Store Connect. Upload success alone is not review approval.
+Submitted to Apple on 11 September 2026 at 17:00 CEST. App Store Connect confirmed **Waiting for Review** for version **1.0 (3)**. The version is configured to release automatically after approval.
+
+Submission ID: `362773f0-b51f-4c20-ab41-96820c43d423`.
+
+[View the submission in App Store Connect](https://appstoreconnect.apple.com/apps/6811081316/distribution/reviewsubmissions/details/362773f0-b51f-4c20-ab41-96820c43d423). This records the status at submission time; Apple review approval is still pending.
